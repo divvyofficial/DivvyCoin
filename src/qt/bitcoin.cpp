@@ -498,7 +498,7 @@ void BitcoinApplication::shutdownResult(int retval)
 
 void BitcoinApplication::handleRunawayException(const QString &message)
 {
-    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. Smartcash can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. DivvyCoin can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(EXIT_FAILURE);
 }
 
@@ -628,7 +628,7 @@ int main(int argc, char *argv[])
 #ifdef ENABLE_WALLET
     std::string strErr;
     if(!smartnodeConfig.read(strErr)) {
-        QMessageBox::critical(0, QObject::tr("Smartcash Core"),
+        QMessageBox::critical(0, QObject::tr("DivvyCoin Core"),
                               QObject::tr("Error reading SmartNode configuration file: %1").arg(strErr.c_str()));
         return EXIT_FAILURE;
     }

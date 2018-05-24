@@ -103,8 +103,8 @@ bool fSmartNode = false;
 bool fLiteMode = false; 
 int nWalletBackups = 10;
 
-const char * const BITCOIN_CONF_FILENAME = "smartcash.conf";
-const char * const BITCOIN_PID_FILENAME = "smartcashd.pid";
+const char * const BITCOIN_CONF_FILENAME = "divvycoin.conf";
+const char * const BITCOIN_PID_FILENAME = "divvycoind.pid";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
@@ -247,7 +247,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            if(ptrCategory->count(string("smartcash"))) {
+            if(ptrCategory->count(string("divvycoin"))) {
                 ptrCategory->insert(string("privatesend"));
                 ptrCategory->insert(string("instantsend"));
                 ptrCategory->insert(string("smartnode"));
@@ -447,7 +447,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "smartcash";
+    const char* pszModule = "divvycoin";
 #endif
     if (pex)
         return strprintf(
@@ -467,13 +467,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Smartcash
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Smartcash
-    // Mac: ~/Library/Application Support/Smartcash
-    // Unix: ~/.smartcash
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\DivvyCoin
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\DivvyCoin
+    // Mac: ~/Library/Application Support/DivvyCoin
+    // Unix: ~/.divvycoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Smartcash";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "DivvyCoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -483,10 +483,10 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Smartcash";
+    return pathRet / "Library/Application Support/DivvyCoin";
 #else
     // Unix
-    return pathRet / ".smartcash";
+    return pathRet / ".divvycoin";
 #endif
 #endif
 }
@@ -851,8 +851,8 @@ std::string CopyrightHolders(const std::string& strPrefix)
     std::string strCopyrightHolders = strPrefix + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION));
 
     // Check for untranslated substitution to make sure Bitcoin Core copyright is not removed by accident
-    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Smartcash") == std::string::npos) {
-        strCopyrightHolders += "\n" + strPrefix + "The Smartcash developers";
+    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("DivvyCoin") == std::string::npos) {
+        strCopyrightHolders += "\n" + strPrefix + "The DivvyCoin developers";
     }
     return strCopyrightHolders;
 }

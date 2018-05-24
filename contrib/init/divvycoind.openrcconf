@@ -1,0 +1,33 @@
+# /etc/conf.d/divvycoind: config file for /etc/init.d/divvycoind
+
+# Config file location
+#DIVVYCOIND_CONFIGFILE="/etc/divvycoin/divvycoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $DIVVYCOIND_USER)
+#DIVVYCOIND_PIDDIR="/var/run/divvycoind"
+
+# What filename to give the pidfile
+#DIVVYCOIND_PIDFILE="${DIVVYCOIND_PIDDIR}/divvycoind.pid"
+
+# Where to write divvycoind data (be mindful that the blockchain is large)
+#DIVVYCOIND_DATADIR="/var/lib/divvycoind"
+
+# User and group to own divvycoind process
+#DIVVYCOIND_USER="divvycoin"
+#DIVVYCOIND_GROUP="divvycoin"
+
+# Path to divvycoind executable
+#DIVVYCOIND_BIN="/usr/bin/divvycoind"
+
+# Nice value to run divvycoind under
+#DIVVYCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+DIVVYCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for divvycoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+DIVVYCOIND_SIGTERM_TIMEOUT=60

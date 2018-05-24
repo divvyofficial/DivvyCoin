@@ -56,7 +56,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward, std::vector<unsigned char> extraNonce)
 {
-    const char* pszTimestamp = "SmartCash, Communinty Driven Cash";
+    const char* pszTimestamp = "DivvyCoin, Communinty Driven Cash";
     const CScript genesisOutputScript = CScript();
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward, extraNonce);
 }
@@ -149,12 +149,12 @@ public:
         vSeeds.push_back(CDNSSeedData("seed.smrt.cash", "seed.smrt.cash", false));        
         vSeeds.push_back(CDNSSeedData("seed1.smrt.cash", "seed1.smrt.cash", false));
         vSeeds.push_back(CDNSSeedData("seed2.smrt.cash", "seed2.smrt.cash", false));
-        vSeeds.push_back(CDNSSeedData("seed1.smartcash.org", "seed1.smartcash.org", false));
-        vSeeds.push_back(CDNSSeedData("seed2.smartcash.org", "seed2.smartcash.org", false));
-        vSeeds.push_back(CDNSSeedData("seed.smartcash.cc", "seed.smartcash.cc", false));
-        vSeeds.push_back(CDNSSeedData("seed2.smartcash.cc", "seed2.smartcash.cc", false));
-        vSeeds.push_back(CDNSSeedData("seed3.smartcash.cc", "seed3.smartcash.cc", false));
-        vSeeds.push_back(CDNSSeedData("seed4.smartcash.cc", "seed4.smartcash.cc", false));
+        vSeeds.push_back(CDNSSeedData("seed1.divvycoin.org", "seed1.divvycoin.org", false));
+        vSeeds.push_back(CDNSSeedData("seed2.divvycoin.org", "seed2.divvycoin.org", false));
+        vSeeds.push_back(CDNSSeedData("seed.divvycoin.cc", "seed.divvycoin.cc", false));
+        vSeeds.push_back(CDNSSeedData("seed2.divvycoin.cc", "seed2.divvycoin.cc", false));
+        vSeeds.push_back(CDNSSeedData("seed3.divvycoin.cc", "seed3.divvycoin.cc", false));
+        vSeeds.push_back(CDNSSeedData("seed4.divvycoin.cc", "seed4.divvycoin.cc", false));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,63);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,18);
@@ -246,7 +246,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("testnet.smartcash.cc", "testnet.smartcash.cc", true));
+        vSeeds.push_back(CDNSSeedData("testnet.divvycoin.cc", "testnet.divvycoin.cc", true));
         vSeeds.push_back(CDNSSeedData("testnet.smrt.cash", "testnet.smrt.cash", true));        
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);

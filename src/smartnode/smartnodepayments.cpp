@@ -26,7 +26,7 @@ CCriticalSection cs_mapSmartnodePaymentVotes;
 *   Determine if coinbase outgoing created money is the correct value
 *
 *   Why is this needed?
-*   - In Smartcash some blocks are superblocks, which output much higher amounts of coins
+*   - In DivvyCoin some blocks are superblocks, which output much higher amounts of coins
 *   - Otherblocks are 10% lower in outgoing value, so in total, no extra coins are created
 *   - When non-superblocks are detected, the normal schedule should be maintained
 */
@@ -602,7 +602,7 @@ bool CSmartnodeBlockPayees::IsTransactionValid(const CTransaction &txNew) {
         }
     }
 
-    LogPrintf("CSmartnodeBlockPayees::IsTransactionValid -- ERROR: Missing required payment, possible payees: '%s', amount: %f Smartcash\n", strPayeesPossible, (float) nSmartnodePayment / COIN);
+    LogPrintf("CSmartnodeBlockPayees::IsTransactionValid -- ERROR: Missing required payment, possible payees: '%s', amount: %f DivvyCoin\n", strPayeesPossible, (float) nSmartnodePayment / COIN);
     return false;
 }
 

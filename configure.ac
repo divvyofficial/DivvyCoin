@@ -7,17 +7,17 @@ define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Smartcash]])
-AC_INIT([Smartcash],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/SmartCash/smartcash/issues],[smartcash],[https://smartcash.cc/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[DivvyCoin]])
+AC_INIT([DivvyCoin],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/DivvyCoin/divvycoin/issues],[divvycoin],[https://divvycoin.cc/])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=smartcashd
-BITCOIN_GUI_NAME=smartcash-qt
-BITCOIN_CLI_NAME=smartcash-cli
-BITCOIN_TX_NAME=smartcash-tx
+BITCOIN_DAEMON_NAME=divvycoind
+BITCOIN_GUI_NAME=divvycoin-qt
+BITCOIN_CLI_NAME=divvycoin-cli
+BITCOIN_TX_NAME=divvycoin-tx
 
 AC_CANONICAL_HOST
 
@@ -906,7 +906,7 @@ AC_MSG_CHECKING([whether to build libraries])
 AM_CONDITIONAL([BUILD_BITCOIN_LIBS], [test x$build_bitcoin_libs = xyes])
 if test x$build_bitcoin_libs = xyes; then
   AC_DEFINE(HAVE_CONSENSUS_LIB, 1, [Define this symbol if the consensus lib has been built])
-  AC_CONFIG_FILES([libsmartcashconsensus.pc:libsmartcashconsensus.pc.in])
+  AC_CONFIG_FILES([libdivvycoinconsensus.pc:libdivvycoinconsensus.pc.in])
 fi
 AC_MSG_RESULT($build_bitcoin_libs)
 

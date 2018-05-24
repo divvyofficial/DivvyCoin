@@ -166,7 +166,7 @@
         <translation>Đánh chỉ số (indexing) lại các khối (blocks) trên ổ đĩa ...</translation>
     </message>
     <message>
-        <source>Send coins to a Smartcash address</source>
+        <source>Send coins to a DivvyCoin address</source>
         <translation>Gửi coins đến tài khoản Bitcoin</translation>
     </message>
     <message>
@@ -214,12 +214,12 @@
         <translation>Mã hoá các khoá bí mật trong Ví của bạn.</translation>
     </message>
     <message>
-        <source>Sign messages with your Smartcash addresses to prove you own them</source>
-        <translation>Dùng địa chỉ Smartcash của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
+        <source>Sign messages with your DivvyCoin addresses to prove you own them</source>
+        <translation>Dùng địa chỉ DivvyCoin của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Smartcash addresses</source>
-        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ Smartcash xác định.</translation>
+        <source>Verify messages to ensure they were signed with specified DivvyCoin addresses</source>
+        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ DivvyCoin xác định.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -238,8 +238,8 @@
         <translation>Thanh công cụ (toolbar)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and smartcash: URIs)</source>
-        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ smartcash: URLs)</translation>
+        <source>Request payments (generates QR codes and divvycoin: URIs)</source>
+        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ divvycoin: URLs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -250,8 +250,8 @@
         <translation>Hiện thỉ danh sách các địa chỉ và nhãn đã dùng để nhận.</translation>
     </message>
     <message>
-        <source>Open a smartcash: URI or payment request</source>
-        <translation>Mở smartcash:URL hoặc yêu cầu thanh toán</translation>
+        <source>Open a divvycoin: URI or payment request</source>
+        <translation>Mở divvycoin:URL hoặc yêu cầu thanh toán</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -533,8 +533,8 @@
         <translation>Ví</translation>
     </message>
     <message>
-        <source>Connect to the Smartcash network through a SOCKS5 proxy.</source>
-        <translation>Kết nối đến máy chủ Smartcash thông qua SOCKS5 proxy.</translation>
+        <source>Connect to the DivvyCoin network through a SOCKS5 proxy.</source>
+        <translation>Kết nối đến máy chủ DivvyCoin thông qua SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1008,8 +1008,8 @@
         <translation>Lựa chọn:</translation>
     </message>
     <message>
-        <source>Smartcash Core</source>
-        <translation>Smartcash Core</translation>
+        <source>DivvyCoin Core</source>
+        <translation>DivvyCoin Core</translation>
     </message>
     <message>
         <source>(default: %u)</source>

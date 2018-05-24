@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Smartcash"
-            VALUE "FileDescription",    "smartcash-cli (JSON-RPC client for " PACKAGE_NAME ")"
+            VALUE "CompanyName",        "DivvyCoin"
+            VALUE "FileDescription",    "divvycoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "smartcash-cli"
+            VALUE "InternalName",       "divvycoin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "smartcash-cli.exe"
-            VALUE "ProductName",        "smartcash-cli"
+            VALUE "OriginalFilename",   "divvycoin-cli.exe"
+            VALUE "ProductName",        "divvycoin-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

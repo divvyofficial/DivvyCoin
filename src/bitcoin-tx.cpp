@@ -56,10 +56,10 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || mapArgs.count("-?") || mapArgs.count("-h") || mapArgs.count("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = strprintf(_("%s smartcash-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = strprintf(_("%s divvycoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  smartcash-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded smartcash transaction") + "\n" +
-              "  smartcash-tx [options] -create [commands]   " + _("Create hex-encoded smartcash transaction") + "\n" +
+              "  divvycoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded divvycoin transaction") + "\n" +
+              "  divvycoin-tx [options] -create [commands]   " + _("Create hex-encoded divvycoin transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

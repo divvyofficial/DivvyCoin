@@ -2,9 +2,9 @@
 
 *.exe
 src/bitcoin
-src/smartcashd
-src/smartcash-cli
-src/smartcash-tx
+src/divvycoind
+src/divvycoin-cli
+src/divvycoin-tx
 src/test/test_bitcoin
 src/qt/test/test_bitcoin-qt
 
@@ -73,17 +73,17 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-smartcash-qt
-Smartcash-Qt.app
-smartcash.creator
-smartcash.creator.user
-smartcash.config
-smartcash.files
-smartcash.includes
+divvycoin-qt
+DivvyCoin-Qt.app
+divvycoin.creator
+divvycoin.creator.user
+divvycoin.config
+divvycoin.files
+divvycoin.includes
 
 # Unit-tests
 Makefile.test
-smartcash-qt_test
+divvycoin-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -117,5 +117,9 @@ share/BitcoindComparisonTool.jar
 
 /doc/doxygen/
 
-libsmartcashconsensus.pc
+libdivvycoinconsensus.pc
 contrib/devtools/split-debug.sh
+.vs/DivvyCoin/v15/Browse.VC.db
+.vs/DivvyCoin/v15/Browse.VC.opendb
+.vs/slnx.sqlite
+.vs/ProjectSettings.json

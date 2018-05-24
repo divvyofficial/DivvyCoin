@@ -708,7 +708,7 @@ public:
     void ListLockedCoins(std::vector<COutPoint>& vOutpts);
 
     // smartnode 
-    /// Get 10000 Smartcash output and keys which can be used for the Smartnode 
+    /// Get 10000 DivvyCoin output and keys which can be used for the Smartnode 
     bool GetSmartnodeVinAndKeys(CTxIn& txinRet, CPubKey& pubKeyRet, CKey& keyRet, std::string strTxHash = "", std::string strOutputIndex = ""); 
     /// Extract txin information and keys from output 
     bool GetVinAndKeysFromOutput(COutput out, CTxIn& txinRet, CPubKey& pubKeyRet, CKey& keyRet); 

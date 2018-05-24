@@ -68,7 +68,7 @@
        </column>
        <column>
         <property name="text">
-         <string>Eligible for SmartRewards</string>
+         <string>Eligible for DivvyRewards</string>
         </property>
        </column>
       </widget>

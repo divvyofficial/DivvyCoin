@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"cc.smartcash.Smartcash-Qt";
+        return @"cc.divvycoin.DivvyCoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

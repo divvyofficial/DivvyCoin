@@ -142,8 +142,8 @@
         <translation>Bloku reindeksēšana no diska...</translation>
     </message>
     <message>
-        <source>Send coins to a Smartcash address</source>
-        <translation>Nosūtīt bitkoinus uz Smartcash adresi</translation>
+        <source>Send coins to a DivvyCoin address</source>
+        <translation>Nosūtīt bitkoinus uz DivvyCoin adresi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -194,12 +194,12 @@
         <translation>Šifrēt privātās atslēgas kuras pieder tavam maciņam</translation>
     </message>
     <message>
-        <source>Sign messages with your Smartcash addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām Smartcash adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your DivvyCoin addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām DivvyCoin adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Smartcash addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Smartcash adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified DivvyCoin addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām DivvyCoin adresēm</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,12 +218,12 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and smartcash: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un smartcash: URIs)</translation>
+        <source>Request payments (generates QR codes and divvycoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un divvycoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a smartcash: URI or payment request</source>
-        <translation>Atvērt Smartcash URI vai maksājuma pieprasījumu</translation>
+        <source>Open a divvycoin: URI or payment request</source>
+        <translation>Atvērt DivvyCoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -504,15 +504,15 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt Smartcash &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt DivvyCoin &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Tērēt neapstiprinātu atlikumu</translation>
     </message>
     <message>
-        <source>Automatically open the Smartcash client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt Smartcash klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the DivvyCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt DivvyCoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -564,7 +564,7 @@
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt Smartcash kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt DivvyCoin kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -598,8 +598,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Smartcash network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Smartcash tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the DivvyCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar DivvyCoin tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -850,7 +850,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Smartcash Kontroles Funkcijas</translation>
+        <translation>DivvyCoin Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1029,8 +1029,8 @@
         <translation>Kopēt parakstu uz sistēmas starpliktuvi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Smartcash address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Smartcash adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this DivvyCoin address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs DivvyCoin adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1126,8 +1126,8 @@
         <translation>Darbināt fonā kā servisu un pieņemt komandas</translation>
     </message>
     <message>
-        <source>Smartcash Core</source>
-        <translation>Smartcash Core</translation>
+        <source>DivvyCoin Core</source>
+        <translation>DivvyCoin Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

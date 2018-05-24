@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SMARTCASH_CONSENSUS_PARAMS_H
-#define SMARTCASH_CONSENSUS_PARAMS_H
+#ifndef DIVVYCOIN_CONSENSUS_PARAMS_H
+#define DIVVYCOIN_CONSENSUS_PARAMS_H
 
 #include "uint256.h"
 #include <map>
@@ -75,4 +75,4 @@ struct Params {
 };
 } // namespace Consensus
 
-#endif // SMARTCASH_CONSENSUS_PARAMS_H
+#endif // DIVVYCOIN_CONSENSUS_PARAMS_H

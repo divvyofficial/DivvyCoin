@@ -1,0 +1,22 @@
+[Unit]
+Description=DivvyCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=divvycoin
+Group=divvycoin
+
+Type=forking
+PIDFile=/var/lib/divvycoind/divvycoind.pid
+ExecStart=/usr/bin/divvycoind -daemon -pid=/var/lib/divvycoind/divvycoind.pid \
+-conf=/etc/divvycoin/divvycoin.conf -datadir=/var/lib/divvycoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

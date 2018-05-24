@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: smartcashd.service
-Upstart: smartcashd.conf
-OpenRC:  smartcashd.openrc
-         smartcashd.openrcconf
-CentOS:  smartcashd.init
-OS X:    org.smartcash.smartcashd.plist
+SystemD: divvycoind.service
+Upstart: divvycoind.conf
+OpenRC:  divvycoind.openrc
+         divvycoind.openrcconf
+CentOS:  divvycoind.init
+OS X:    org.divvycoin.divvycoind.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

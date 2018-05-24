@@ -660,7 +660,7 @@ bool CSmartnodeBroadcast::CheckOutpoint(int &nDos) {
             return false;
         }
         if (coins.vout[vin.prevout.n].nValue != SMARTNODE_COIN_REQUIRED * COIN) {
-            LogPrint("smartnode", "CSmartnodeBroadcast::CheckOutpoint -- Smartnode UTXO should have 10000 Smartcash, smartnode=%s\n", vin.prevout.ToStringShort());
+            LogPrint("smartnode", "CSmartnodeBroadcast::CheckOutpoint -- Smartnode UTXO should have 10000 DivvyCoin, smartnode=%s\n", vin.prevout.ToStringShort());
             return false;
         }
         if (chainActive.Height() - coins.nHeight + 1 < Params().GetConsensus().nSmartnodeMinimumConfirmations) {

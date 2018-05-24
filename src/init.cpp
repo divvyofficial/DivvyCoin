@@ -492,8 +492,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/smartcash/smartcash>";
-    const std::string URL_WEBSITE = "<https://smartcash.cc>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/divvycoin/divvycoin>";
+    const std::string URL_WEBSITE = "<https://divvycoin.cc>";
     // todo: remove urls from translations on next change
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
@@ -597,7 +597,7 @@ void CleanupBlockRevFiles()
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
-    RenameThread("smartcash-loadblk");
+    RenameThread("divvycoin-loadblk");
     CImportingNow imp;
 
     // -reindex
@@ -790,7 +790,7 @@ void InitLogging()
     fLogIPs = GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Smartcash version %s\n", FormatFullVersion());
+    LogPrintf("DivvyCoin version %s\n", FormatFullVersion());
 }
 
 /** Initialize bitcoin.
